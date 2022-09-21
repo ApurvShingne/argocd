@@ -1,7 +1,7 @@
 #### Building Docker Image ####
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'asia-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:$SHORT_SHA', '-t', 'asia-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:${_IMAGE_TAG}', '.' ]
+  args: [ 'build', '-t', 'asia-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:$SHORT_SHA', '.' ]
 
 #### Pushing Docker Image ####
 - name: 'gcr.io/cloud-builders/docker'
