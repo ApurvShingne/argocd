@@ -29,7 +29,7 @@ steps:
     git config --global user.email "apurvashingne@gmail.com"
     git add -A
     git commit -m "[Cloud Builder] Updated image tag us-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:$SHORT_SHA from commit ${COMMIT_SHA}"
-    git push origin main
+    git push https://ApurvShingne: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@github.com/ApurvShingne/mynodeapp.git main
     
 # availableSecrets:
 #   secretManager:
