@@ -10,7 +10,6 @@ steps:
   - -c
   - |
     docker push asia-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:$SHORT_SHA
-    docker push asia-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:${_IMAGE_TAG}
 
 # # This step generates the new manifest
 # - name: 'gcr.io/cloud-builders/gcloud'
