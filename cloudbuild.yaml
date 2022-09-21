@@ -1,7 +1,7 @@
 #### Building Docker Image ####
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'asia-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:$SHORT_SHA', '.' ]
+  args: [ 'build', '-t', 'us-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:$SHORT_SHA', '.' ]
 
 #### Pushing Docker Image ####
 - name: 'gcr.io/cloud-builders/docker'
@@ -9,7 +9,7 @@ steps:
   args: 
   - -c
   - |
-    docker push asia-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:$SHORT_SHA
+    docker push us-docker.pkg.dev/$PROJECT_ID/nodeapp/myapp:$SHORT_SHA
 
 # # This step generates the new manifest
 # - name: 'gcr.io/cloud-builders/gcloud'
